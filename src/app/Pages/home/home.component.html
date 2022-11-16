@@ -1,0 +1,73 @@
+<div class="home">
+  <div class="description">
+    <div class="description__writeup">
+      <div class="description__writeup-logo">
+        <img src="../../../assets/CatwikiLogo.svg" alt="" />
+      </div>
+      <h4>Get to know more about your cat breed</h4>
+
+      <div class="description__input">
+        <textarea
+          name=""
+          id=""
+          cols="20"
+          rows="2"
+          placeholder="Enter your breed"
+          (click)="displayDropdown()"
+        ></textarea>
+        <i class="bi bi-search" (click)="(search)"></i>
+      </div>
+
+      <div class="description__input-dropdown" *ngIf="showDropdown">
+        <ul *ngFor="let breedlist of breeds">
+          <li>{{ breedlist }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="discover">
+    <p>Most searched breeds</p>
+    <div class="discover__bar"></div>
+    <div class="discover__div3">
+      <p class="discover__div3-p1">66+ Breeds For you to discover</p>
+      <p class="discover__div3-p2">
+        SEE MORE <i class="bi bi-arrow-right"></i>
+      </p>
+    </div>
+
+    <div class="discover__images" *ngFor="let images of catImages">
+      <div class="discover__img">
+        <img src="{{ images.imageUrl }}" alt="" />
+      </div>
+      <p class="discover__images-text">{{ images.name }}</p>
+    </div>
+  </div>
+
+  <div class="reasons">
+    <div class="reasons__bar"></div>
+    <div class="reasons__heading">
+      <p>Why should you have a cat?</p>
+    </div>
+    <div class="reasons__div3">
+      <div class="reasons__writeup">
+        <p>
+          Having a cat around you can actually trigger the release of calming
+          chemicals in your body which lower your stress and anxiety leves
+        </p>
+      </div>
+
+      <div class="reasons__img">
+        <div class="reasons__img-img1">
+          <img src="../../../assets/image 1.png" alt="" />
+        </div>
+        <div class="reasons__img-img2">
+          <img src="../../../assets/image 2.png" alt="" />
+        </div>
+        <div class="reasons__img-img3">
+          <img src="../../../assets/image 3.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

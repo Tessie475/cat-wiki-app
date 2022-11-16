@@ -1,0 +1,119 @@
+<div class="back-button">
+  <a routerLink="/home" routerLinkActive="active"
+    ><i class="bi bi-arrow-left"></i
+  ></a>
+</div>
+
+<div class="breeds__details">
+  <div class="breeds__details-img">
+    <img src="{{ breedImg }}" alt="" />
+  </div>
+  <div *ngFor="let breed of breeds">
+    <div class="breeds__details-writeup">
+      <h3>{{ breed.name }}</h3>
+      <p>
+        {{ breed.description }}
+      </p>
+    </div>
+  </div>
+
+  <div *ngFor="let breed of breeds">
+    <div class="about__breed">
+      <p>Temperament: {{ breed.temperament }}</p>
+      <div class="about__breed-bar--colored"></div>
+      <div class="about__breed-bar--white"></div>
+    </div>
+
+    <div class="about__breed">
+      <p>origin: {{ breed.origin }}</p>
+      <div class="about__breed-bar--colored"></div>
+      <div class="about__breed-bar--white"></div>
+    </div>
+
+    <div class="about__breed">
+      <p>Life Span: {{ breed.life_span }} years</p>
+      <div class="about__breed-bar--colored"></div>
+      <div class="about__breed-bar--white"></div>
+    </div>
+
+    <div class="about__breed">
+      <p>Adaptability:</p>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--colored"></div>
+      </div>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--white"></div>
+      </div>
+    </div>
+
+    <div class="about__breed">
+      <p>Affection level:</p>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--colored"></div>
+      </div>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--white"></div>
+      </div>
+    </div>
+
+    <div class="about__breed">
+      <p>Child friendly:</p>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--colored"></div>
+      </div>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--white"></div>
+      </div>
+    </div>
+
+    <div class="about__breed">
+      <p>Grooming:</p>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--colored"></div>
+      </div>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--white"></div>
+      </div>
+    </div>
+
+    <div class="about__breed">
+      <p>Intelligence:</p>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--colored"></div>
+      </div>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--white"></div>
+      </div>
+    </div>
+
+    <div class="about__breed">
+      <p>Health issues:</p>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--colored"></div>
+      </div>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--white"></div>
+      </div>
+    </div>
+
+    <div class="about__breed">
+      <p>Social needs:</p>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--colored"></div>
+      </div>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--white"></div>
+      </div>
+    </div>
+
+    <div class="about__breed">
+      <p>Stranger friendly:</p>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--colored"></div>
+      </div>
+      <div *ngFor="let bar of [].constructor(breed.adaptability)">
+        <div class="about__breed-bar--white"></div>
+      </div>
+    </div>
+  </div>
+</div>

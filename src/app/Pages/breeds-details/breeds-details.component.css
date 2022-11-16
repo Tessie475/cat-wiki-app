@@ -1,0 +1,43 @@
+.back-button a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #291507;
+}
+
+.breed__details {
+  display: flex;
+  flex-direction: row;
+}
+
+.breed__details-img {
+  width: 371px;
+  height: 371px;
+}
+
+.about__breed {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+}
+
+.about__breed-div1 {
+  display: flex;
+  flex-direction: row;
+}
+.about__breed-bar--colored {
+  width: 40px;
+  height: 7px;
+  margin-top: 8px;
+  background-color: #544439;
+  margin-right: 16px;
+  border-radius: 8px;
+  margin-left: 32px;
+}
+
+.about__breed-bar--white {
+  width: 40px;
+  height: 7px;
+  margin-top: 8px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
